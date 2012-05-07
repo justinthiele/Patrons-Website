@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<!--
+
+	 ____       _                         _                        __   __          _ 
+	|  _ \ __ _| |_ _ __ ___  _ __  ___  | |    _____   _____ ___  \ \ / /__  _   _| |
+	| |_) / _` | __| '__/ _ \| '_ \/ __| | |   / _ \ \ / / _ \ __|  \ V / _ \| | | | |
+	|  __/ (_| | |_| | | (_) | | | \__ \ | |___ (_) \ V /  __\__ \   | | (_) | |_| |_|
+	|_|   \__,_|\__|_|  \___/|_| |_|___/ |_____\___/ \_/ \___|___/   |_|\___/ \__,_(_)
+
+	xoxo, 
+	-Justin
+
+-->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta property="og:title" content="Patrons" />
+	<meta property="og:type" content="company" />
+	<meta property="og:url" content="http://patrons.us/" />
+	<meta property="og:site_name" content="Patrons" />
+	<meta property="og:description" content="A super easy way for your biggest fans to support you."/>
+	<meta property="og:image" content="http://patrons.us/images/patrons-logo.png" />
+	<meta name="keywords" http-equiv="keywords" content="fan club, 1000 true fans, artist, bands, musicians, fans, direct to fan, crowd funding"/>
+
+    <!-- Include CSS -->
+    <link href="stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/slimbox2.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+
+    <!-- Include Scripts -->	
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.cycle.lite.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.pngFix.pack.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.color.js"></script>
+	<script type="text/javascript" src="javascripts/hoverIntent.js"></script>
+	<script type="text/javascript" src="javascripts/superfish.js"></script>
+    <script type="text/javascript" src="javascripts/slimbox2.js"></script>
+    <script type="text/javascript" src="javascripts/slides.min.js"></script>
+    <script type="text/javascript" src="javascripts/custom.js"></script>	
+
+  	<%= csrf_meta_tag %>
+
+	<%= yield :head %>
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28932464-1']);
+	  _gaq.push(['_setDomainName', 'patrons.us']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=113675545412483";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+</head>
+
+<body>
+	
+
+	<!-- START HEADER -->
+	<div id="header">
+
+		<div class="container">
+
+	    	<div id="primary-nav" class="header-right">
+
+	            <ul class="sf-menu">
+	                <li><a href="/">Home</a></li>
+	                <li><a href="/learn-more">Learn More</a></li>
+	                <li><a href="/faq">FAQ</a></li>
+	                <li><a href="/about">About Us</a></li>	
+	                <li><a href="/contact">Contact</a></li>	
+	                <li class="signup-link"><a href="/get-started">Get Started</a></li>	
+
+	            </ul>
+
+	        </div>
+
+	        <!-- LOGO -->        
+	    	<a href="/" id="logo"><img src="images/patrons-logo.png" border="0" alt="Patrons Logo" /></a>
+
+	        <br class="clear" />
+
+	    </div>
+
+	</div><!-- END HEADER -->
+
+
+<%= yield %>
+
+	<!-- START FOOTER -->
+	<div id="footer">
+	
+		<div class="container">
+	    
+	    	<div id="footer-right">
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<div class="fb-like" data-href="https://www.facebook.com/patrons.us" data-send="true" data-layout="button_count" data-width="200" data-show-faces="true" style="text-align:right;" data-action="recommend"></div><br>
+				<a href="https://twitter.com/patrons_us" class="twitter-follow-button" data-show-count="false" data-width="200px">Follow @patrons_us</a>
+	       </div>
+	    
+			<a href="/">Home</a> &nbsp;&nbsp; <a href="/learn-more">Learn More</a> &nbsp;&nbsp; <a href="/faq">FAQ</a> &nbsp;&nbsp; <a href="/about">About Us</a> &nbsp;&nbsp; <a href="/contact">Contact</a> &nbsp;&nbsp; <a href="/terms">Terms</a> &nbsp;&nbsp; <a class="signup-link" href="/get-started">Get Started</a><br />
+	        © 2012 Patrons. <a href="http://madeinportland.org/web" target="_blank" id="portland_link">Made with love in Portland</a>.<br />
+	        
+	        <br class="clear" />
+	    
+	  </div>
+	    
+	</div><!-- END FOOTER -->
+
+</body>
+</html>
